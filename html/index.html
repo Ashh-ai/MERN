@@ -1,0 +1,252 @@
+<!-- IS USEDD TO WRITE COMMENT -->
+<!DOCTYPE html> <!-- IT IS USED TO TELLBROWSER THAT YOURE USING HTML 5  -->
+<html lang="en">  <!-- here lang = " en" is a attribute where lang means language and en means english -->
+<head><!-- headtag is used for info weknow but not need to display -->
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <!-- info we used to display-->
+    hello world 
+</body>
+</html></i>
+
+
+<!--Interview Question #1 ⭐⭐⭐⭐⭐
+Q. What is HTML?
+Answer
+HTML (HyperText Markup Language) is the standard markup language used to create the structure of web pages.
+It defines elements like headings, paragraphs, images, links, forms, tables, and more.
+Key point: HTML structures content; it does not control styling (CSS) or behavior (JavaScript).
+Interview Question #2 ⭐⭐⭐⭐⭐
+Q. Is HTML a programming language?
+Answer
+No.
+HTML is a markup language, not a programming language.
+Why?
+A programming language usually supports concepts such as:
+Variables
+Loops
+Conditions (if, else)
+Functions
+Decision-making
+HTML has none of these.
+It only describes the structure of a webpage.
+Follow-up Interview Question ⭐⭐⭐⭐⭐
+Then why is it called a language?
+Because it has:
+Rules (syntax)
+Keywords (tags)
+A standard format understood by browsers
+But it cannot perform logic on its own.
+
+Q. What is the latest version of HTML?⭐⭐⭐⭐⭐
+Answer
+The current standard is commonly referred to as HTML5.
+
+3. <head>  ⭐⭐⭐⭐⭐
+This is one of the most misunderstood tags.
+The <head> does not display content on the webpage.
+Instead, it stores information about the webpage.
+Examples include:
+Page title
+Character encoding
+Viewport settings
+CSS links
+JavaScript file links
+SEO metadata
+We'll explore all of these in upcoming lessons.
+
+Q. What is the root element of an HTML document?
+Answer
+The <html> element.
+Every HTML page has one root element that contains the <head> and <body> sections.
+Interview Question #8
+Q. Can an HTML document have two <html> tags?
+Answer
+No.
+There should only be one root <html> element.
+
+                 ⭐ ⭐⭐⭐⭐⭐HEADING TAGS ⭐⭐⭐⭐⭐⭐⭐
+⭐ Interview Question 1
+What are heading tags in HTML?
+Answer:
+Heading tags are semantic HTML elements used to define the hierarchical structure of headings and subheadings in a webpage.
+HTML provides six heading levels, from <h1> to <h6>, where <h1> is the highest-level heading and <h6> is the lowest.
+
+  ⭐  How many heading tags are available in HTML?
+Answer:
+There are six heading elements:
+
+⭐ Interview Question 3
+What is the difference between <h1> and <h6>?
+Answer:
+The main difference is their heading level in the document hierarchy.
+<h1> represents the highest-level heading, while <h6> represents the lowest-level heading.
+The browser also gives them different default styling, but developers should not choose heading levels purely based on font size.
+
+⭐ Interview Question 4
+Is <h1> always the biggest text on a webpage?
+Answer:
+No.
+By default, browsers usually style <h1> larger than the other headings, but CSS can change its appearance.
+⭐ Interview Question 6
+⭐⭐⭐⭐⭐⭐What is semantic HTML?
+Answer:
+Semantic HTML means using HTML elements according to their meaning and purpose, rather than simply choosing elements based on their default appearance.
+For example:
+<h1>My Portfolio</h1> 
+is semantic.
+Whereas:
+<div style="font-size: 32px;">
+    My Portfolio
+</div>
+only creates visually large text and doesn't identify it as a heading.
+⭐ Interview Question 7
+Can we use multiple <h1> tags on one webpage?
+This is a very common interview question.
+Answer:
+Yes, HTML allows multiple <h1> elements.
+    ⭐ Interview Question 9
+What is the difference between <title> and <h1>?
+🔥 Very important interview question.
+<title> is placed inside <head>:
+<head>
+    <title>My Portfolio</title>
+</head>
+<h1> is placed inside <body>:
+<body>
+    <h1>My Portfolio</h1>
+</body>
+Difference:
+⭐ Interview Question 10
+Can <h1> be inside <head>?
+Normally, no.
+Headings belong to the document's body content
+⭐ Interview Question 11
+Can <h2> come directly after <h1>?
+Yes.
+⭐ Interview Question 13
+Do heading levels need to be used sequentially?
+Not strictly.
+This is technically valid HTML
+
+⭐ Interview Question 14
+Can headings contain links?
+Yes.
+Example:
+<h2>
+    <a href="projects.html">My Projects</a>
+</h2>
+This is useful when the heading itself acts as a link.  
+⭐ Interview Question 15
+Can headings contain images?
+Yes.
+For example:
+<h1>
+    <img src="logo.png" alt="Company Logo">
+    My Company
+</h1>
+But whether this is the best structure depends on what the image represents.
+⭐ Interview Question 16
+Can headings contain other headings?
+No.
+Don't do:
+<h1>
+    <h2>My Website</h2>
+</h1>
+Heading elements should not be nested inside other heading elements.
+Correct:
+⭐⭐⭐⭐⭐⭐⭐⭐Q22. You're creating an Amazon-like page. What would you use for sections?
+Something like:
+<h1>Apple iPhone 17 Pro</h1>
+
+<h2>Product Details</h2>
+
+<h2>Specifications</h2>
+
+<h2>Customer Reviews</h2>
+
+<h2>Related Products</h2>
+🔥 Interview Question 30
+Can JavaScript change a heading?
+Yes.
+JavaScript can modify the DOM.
+For example:
+document.querySelector("h1").textContent = "New Heading";
+The HTML structure can therefore be dynamically modified after the page loads.
+
+      ⭐⭐⭐⭐⭐⭐
+
+⭐ Interview Questions — <p>
+Q1. What is the purpose of <p>?
+Answer:
+<p> represents a paragraph of text in an HTML document.
+Q2. Is <p> a block-level element?
+Answer:
+Yes. By default, <p> has display: block.
+It normally starts on a new line and occupies the available width.
+Q3. Can a <p> contain another <p>?
+Answer:
+No. Paragraph elements cannot be nested inside one another.
+Don't write:
+<p>
+    This is outer
+    <p>This is inner</p>
+</p>
+Instead:
+<p>This is outer.</p>
+<p>This is another paragraph.</p>
+Q4. Can <p> contain other HTML elements?
+Yes, but there are restrictions.
+For example:
+<p>
+    I am learning <strong>HTML</strong>.
+</p>
+That's valid.
+But you shouldn't put block-level structures such as another <p>, <div>, or heading inside a paragraph.
+Q5. What happens when you press Enter inside HTML source code?
+Suppose you write:
+<p>
+    Hello
+    World
+</p>
+Does the browser show:
+Hello
+World
+No.
+Normally, HTML collapses ordinary whitespace.
+You'll generally see:
+Hello World
+This is an important concept.
+     ⭐⭐⭐⭐⭐⭐
+<br> — Line Break
+<br> means line break.
+Example:
+<p>
+    Hello<br>
+    World
+</p>
+Output:
+Hello
+World
+
+
+⭐ Interview Questions — <br>
+Q6. What is <br> used for?
+Answer:
+<br> inserts a line break within text.
+Q7. Does <br> have a closing tag?
+No.
+It's a void element.
+Q8. What's a void element?
+A void element is an HTML element that cannot have child content and does not have a closing tag.
+Examples:
+<br>
+<hr>
+<img>
+<input>
+<meta>
+<link>
+-->
+
