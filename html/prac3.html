@@ -1,0 +1,185 @@
+<!-- Q4. Is <div> semantic?
+Answer: No.
+
+It's a generic container.
+
+Q5. Difference between <div> and <section>?
+Answer:
+<div> is a generic container, while <section> represents a thematic grouping of content.
+
+Q6. Difference between <section> and <article>?
+Answer:
+
+<section> groups related content under a common theme, while <article> represents self-contained content that can stand independently.
+
+Q7. What is <main>?
+Answer:
+It represents the primary/main content of the document.
+
+Q8. How many <main> elements should normally be used on a page?
+
+Answer:
+Normally one visible <main> element per document.
+
+Q9. What is <nav>?
+Answer:
+It represents a section containing navigation links.
+
+Q10. Does every <a> need to be inside <nav>?
+Answer:
+No. <nav> is intended for major/grouped navigation sections, not every hyperlink. 
+
+Q11. What is <aside>?
+Answer:
+It represents content indirectly related to the surrounding main content, such as a sidebar or related information.
+
+Q12. Can <article> contain <section>?
+Answer:
+Yes.
+
+Q13. Can <section> contain <article>?
+Answer:
+Yes.
+
+Q14. Can <header> be inside <article>?
+Answer:
+Yes.
+
+Q15. Can <footer> be inside <article>?
+Answer:
+Yes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border = " black ">
+        <!-- <caption>
+<caption> provides a title/description for the table. -->
+      <caption > dominoes pizza </caption> 
+      <thead> <tr>
+            <th> pizza type </th>
+            <th> price </th>
+        </tr>
+        </thead>    <!--  to wrap table header -->
+        <tbody>
+        <tr> 
+        <td> corn pizza </td>
+        <td> 89/- </td>
+        </tr>
+        tr>
+        <td> volcano pizza </td>
+        <td> 389/- </td>
+        </tr>
+        tr>
+        <td> cheese burst  </td>
+        <td> 289/- </td>
+        </tr> </tbody>  <!-- to wrap table body -->
+    </table>
+   <tfooter>
+    <!-- use to show table footer -->
+   </tfooter>
+</body>
+</html>
+<!-- 
+┌─────────┬─────┬────────┐
+│  Name   │ Age │ Course │  ← <th>
+├─────────┼─────┼────────┤
+│ Ashray  │ 21  │ BCA    │  ← <td>
+├─────────┼─────┼────────┤
+│ Rahul   │ 22  │ B.Tech │
+└─────────┴─────┴────────┘ -->
+<!-- 
+They improve the structure and readability of your table.   basically thewre are semantic tag (? inka koi impact nhi padta )
+They are particularly useful for larger tables and can also help browsers and assistive technologies understand the table's structure. -->
+
+
+
+<!-- 7. colspan
+🔥 Very important interview topic.
+colspan allows a cell to span multiple columns. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <table border = " black ">
+        <!-- <caption>
+<caption> provides a title/description for the table. -->
+      <caption > dominoes pizza </caption> 
+      <thead> <tr>
+            <th rowspan ="2" > pizza type </th>
+            <!-- rowspan allows a cell to span multiple rows. -->
+            <th colspan ="2"> price </th>  
+            <!-- colspan allows a cell to span multiple columns. -->
+        </tr>
+        <tr>
+            <th> INR</th>
+            <th> USD </th>
+        </tr>
+        </thead>    <!--  to wrap table header -->
+        <tbody>
+        <tr> 
+        <td> corn pizza </td>
+        <td> 89/- </td>
+        <td> 0.3</td>    
+        </tr>
+        
+        <td> volcano pizza </td>
+        <td> 389/- </td>
+        <td> 0.82</td>
+        </tr>
+      
+        <td> cheese burst  </td>
+        <td> 289/- </td>
+        <td> 0.76</td>
+        </tr> </tbody>  <!-- to wrap table body -->
+    </table>
+   <tfooter>
+    <!-- use to show table footer -->
+   </tfooter>
+</body>
+</html>
+
+<!-- Q14. Can a table be nested inside another table?
+Yes, although it should only be done when there's a genuine structural reason. -->
+
+
+
+<!-- practise question  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <title> a test table with merge cell </title>
+        <thead>
+            <th colspan ="2" >  Average </th>
+            <th> Height </th>
+            <th> weight </th>
+            <th colspan="2" rowspan="2">  red eyes </th>
+
+
+        </thead>
+
+        <tbody>
+            <tr> </tr>        </tbody>
+
+
+    </table>
+</body>
+</html>
