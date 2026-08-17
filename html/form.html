@@ -1,0 +1,76 @@
+  <!-- 1. Form kya hota hai?
+HTML <form> ka use user se information/input lene ke liye hota hai.
+Examples:
+Login form
+Registration form
+Contact form
+Search form
+Job application form
+Payment details form -->
+<!-- form :- are used to collect data from the user.
+action attribute :- is used to define what action needs to be performed when a form is submitted or where the form data shoyuldbe sent. -->
+                <!-- 3. action attribute
+Ye bahut important interview question hai.
+<form action="/login">
+action batata hai:
+Form submit hone ke baad data kahan bhejna hai. -->
+
+
+<form action="/login">
+    <input type="text">
+    <input type="password">
+
+    <button type="submit">Login</button>
+</form>
+<!-- Submit karne par browser /login par request bhejega. -->
+
+
+<form action=" blah blah"> </form>
+
+
+<input> <!-- ye void element hai -->
+
+<!-- type decide karta hai input kis type ka hoga. -->
+ Common types:
+username 
+<input type="text">
+<br>
+
+password
+<input type="password">
+<br>
+email
+
+<input type="email">
+number 
+<br>
+<input type="number">
+date 
+<br>
+<input type="date">
+
+<input type="radio">
+
+<input type="checkbox">
+
+<input type="file">
+
+<input type="submit">
+
+
+    <!-- PLACEHOLDER ATTRIBUTE  -->
+
+    <input type = "password" placeholder=" enter password "/ >
+
+    <input type = " date "  placeholder=" enter dob " />
+<!-- 5. <label>
+Label input ka name/description provide karta ha -->
+<!-- Isse label par click karne se input focus ho sakta hai. -->
+    <label>
+        password     
+            <input type = "password" placeholder=" enter password "/ >
+
+    </label>
+<!-- 
+    Q: label ka use kyun karte hain?
+Answer: Input ko identify karne aur accessibility improve karne ke liye. -->
