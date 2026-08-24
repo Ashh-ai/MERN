@@ -74,3 +74,132 @@ Label input ka name/description provide karta ha -->
 <!-- 
     Q: label ka use kyun karte hain?
 Answer: Input ko identify karne aur accessibility improve karne ke liye. -->
+
+
+<!-- 🔥 Checkbox Interview Questions
+Q1. What is a checkbox?
+Answer:
+A checkbox allows the user to independently select or deselect an option. Multiple checkboxes can be selected at the same time. -->
+<!-- 
+Q3. How do you make a checkbox selected by default?
+Use:
+checked
+Example:
+<input type="checkbox" checked> -->
+
+<!-- 
+Q5. Why should we use <label> with checkbox?
+It provides a text description and improves accessibility/usability.
+ Clicking the label can also toggle the checkbox when properly associated. -->
+
+
+ 3. Radio Button — <input type="radio">
+Radio buttons are used when the user should normally select only one option from a group.
+Example:
+<p>Gender:</p>
+
+<input
+    type="radio"
+    id="male"
+    name="gender"
+    value="male"
+>
+
+<label for="male">Male</label>
+
+
+<input
+    type="radio"
+    id="female"
+    name="gender"
+    value="female"
+>
+
+<!-- <label for="female">Female</label>
+Output:
+○ Male
+○ Female
+User can select one:
+● Male
+○ Female
+🔥 Most Important: Same name
+This is extremely important.
+<input type="radio" name="gender" value="male">
+
+<input type="radio" name="gender" value="female">
+Both have:
+name="gender"
+Therefore they belong to the same radio group.
+What if we use different names?
+<input type="radio" name="male" value="male">
+
+<input type="radio" name="female" value="female"> -->
+Now they're different groups, so both can potentially be selected.
+
+4. Select Element — <select>
+<select> creates a dropdown list.
+Example:
+<label for="course">Choose Course:</label>
+
+<select id="course" name="course">
+
+    <option value="bca">BCA</option>
+    <option value="btech">B.Tech</option>
+    <option value="bba">BBA</option>
+
+</select>
+
+
+5. <option>
+Each choice inside <select> is created using <option>.
+<select>
+
+    <option>BCA</option>
+    <option>B.Tech</option>
+    <option>BBA</option>
+
+</select>
+
+
+<!-- 
+
+🔥 Select Interview Questions
+Q1. What is <select>?
+Answer:
+<select> creates a dropdown control that allows the user to choose one or, with multiple, several options.
+Q2. What is <option>?
+Answer:
+<option> defines an individual choice inside a <select> element.
+Q3. How do you set a default option?
+Use:
+selected
+Example:
+<option selected>BCA</option>
+Q4. How do you allow multiple selections in <select>?
+Use:
+multiple
+<select multiple>
+Q5. What is the difference between <select> and radio buttons?
+Answer:
+Both can be used for choosing options, but <select> presents choices in a dropdown, while radio buttons display the choices directly.
+Q6. What is <optgroup>?
+Answer:
+<optgroup> groups related options inside a dropdown -->
+
+
+    <!-- 🔥 Checkbox vs Radio vs Select
+This is very important for interviews.
+Feature	Checkbox	Radio	Select
+Element	<input type="checkbox">	<input type="radio">	<select>
+Multiple choices	✅	❌ within same group	❌ by default
+Multiple with special attribute	—	—	multiple
+Default selection	checked	checked	selected
+Individual choice	Yes	Yes	<option>
+Best for	Multiple independent choices	One choice from group	Dropdown choices -->
+
+
+
+<!-- ⭐ Interview golden rule:
+Checkbox = "Select any/all that apply"
+Radio = "Select exactly one from this group"
+Select = "Choose from a dropdown" -->

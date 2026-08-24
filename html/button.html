@@ -1,0 +1,174 @@
+<button type="submit">Submit</button>
+<!-- But <button> is much more powerful than just submitting forms. 
+    It is commonly used with JavaScript for actions like opening menus, showing/hiding content, submitting forms, etc. -->
+<!-- 
+    1. Basic Button
+<button>Click Me</button>
+This creates:
+[ Click Me ]
+You can put text or HTML content inside a button:
+<button>
+    Login
+</button> -->
+
+<!-- 🔥 6. Very Important Interview Question
+Q. What are the different types of <button>?
+Answer:
+The commonly used button types are: -->
+<!-- 2. Three Important Button Types
+Inside a form, the type attribute is extremely important.
+<button type="submit">Submit</button>
+
+<button type="reset">Reset</button>
+
+<button type="button">Click Me</button> -->
+
+
+<!-- User fills form
+      ↓
+Clicks Login
+      ↓
+submit button
+      ↓
+Form submitted
+      ↓
+action="/login" -->
+<!-- 
+If the user changes the values and clicks Reset, the controls return to their initial values.
+Important
+reset doesn't necessarily mean "clear everything to empty."
+It resets controls to their default/initial values. -->
+<!-- 
+🔥 Interview Question
+Q. Difference between <button> and <input type="button">?
+Answer: -->
+<!-- <button> is a button element that can contain text and HTML content, while <input type="button"> is an input control whose displayed label comes from the value attribute. -->
+
+<!-- 
+    9. Button with disabled
+You can disable a button:
+<button type="submit" disabled>
+    Submit
+</button>
+The user cannot normally interact with it.
+This is useful when:
+- Form is incomplete
+- Data is being submitted
+- User doesn't have permission
+- Some condition isn't satisfied -->
+
+<button
+    type="submit"
+    name="action"
+    value="save">
+    Save
+</button>
+
+<form action="/register" method="post">
+
+    <label for="name">
+        Name:
+    </label>
+
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+    >
+
+    <br><br>
+
+    <label for="email">
+        Email:
+    </label>
+
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+    >
+
+    <br><br>
+
+    <button type="submit">
+        Register
+    </button>
+
+    <button type="reset">
+        Reset
+    </button>
+
+    <button type="button">
+        Help
+    </button>
+
+</form>
+<!-- 
+Q6. What happens if type is omitted?
+Answer:
+When a <button> is inside a form, its default type is submit -->
+
+    Q10. How do you disable a button?
+<button disabled>
+    Submit
+</button
+
+<!-- 
+
+    name attribute 
+id   → HTML element ko identify karo
+name → submitted form data ko identify karo -->
+
+
+<!-- 3. Why is name important?
+Suppose:
+<input type="text" name="username">
+User enters:
+Ashray
+Form submission mein browser can send:
+username=Ashray -->
+
+<!-- 
+🔥 Interview Questions
+Q1. What is the name attribute in HTML?
+Answer:
+The name attribute identifies a form control when its data is submitted.
+Example:
+<input type="text" name="username"> -->
+
+
+
+<!-- 1. Checkbox — <input type="checkbox">
+Checkbox ka use tab hota hai jab user zero, one, ya multiple options select kar sakta hai.
+Basic example -->
+<label>
+    <input type="checkbox" name="skill" value="java">
+    Java
+</label>
+
+<label>
+    <input type="checkbox" name="skill" value="python">
+    Python
+</label>
+
+<label>
+    <input type="checkbox" name="skill" value="javascript">
+    JavaScript
+</label>
+<!-- User select kar sakta hai:
+☑ Java
+☑ Python
+☐ JavaScript
+Yaani multiple options possible.
+checked
+Agar checkbox pehle se selected chahiye:
+<input
+    type="checkbox"
+    name="skill"
+    value="java"
+    checked
+> -->
+<!-- Java
+Page load hone par Java already selected hoga. -->
