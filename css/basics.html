@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    /* Inline Style in CSS */
+
+/* Inline CSS is a way of applying CSS directly to an HTML element using the style attribute. 
+It applies styles specifically to that individual element. */
+
+
+<p style= "color : red" >  Hello </p>
+
+You can add multiple CSS properties inside style:
+<h1 style="color: blue; font-size: 40px;">
+    Hello
+</h1>
+
+<button style = "color : green"> submit </button>
+<button style = "color : green ;  background-color: red"> submit </button>
+
+.
+<!-- 🔥 Interview Questions
+Q1. What is inline CSS?
+Answer:
+Inline CSS is CSS written directly inside an HTML element using the style attribute.
+ It applies styles specifically to that element. -->
+
+ STYLE TAG 
+ 
+<h1> firsat line </h1>
+<h2> second line </h2>
+<h3> third line </h3>
+ 
+ <style>
+    h1 {
+    color: blue
+ }
+ h2 {
+    color: pink
+ }
+  h3 {
+    color: red
+ }
+</style>
+
+<style>
+        h1 {
+    color: blue;
+    background-color: yellow;
+}
+
+</style>
+
+<!-- Q6. Which is better: inline CSS or external CSS?
+For most real-world projects:
+External CSS is generally better because it provides:
+- Reusability
+- Maintainability
+- Separation of concerns
+- Easier large-scale styling
+Example: -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+| | **Inline CSS** | **Internal CSS** | **External CSS** |
+|---|---|---|---|
+| **Where?** | Inside HTML element | `<style>` inside HTML | Separate `.css` file |
+| **Syntax** | `style=""` | `<style>...</style>` | `<link rel="stylesheet">` |
+| **Scope** | One specific element | One HTML page | Multiple HTML pages |
+| **Reusability** | ❌ Poor | ⚠️ Limited | ✅ Excellent |
+| **Maintainability** | ❌ Poor | ⚠️ Medium | ✅ Best |
+| **Real-world use** | Limited | Small pages/prototypes | ⭐ Most common |
+| **Priority** | Very high cascade precedence | Depends on cascade | Depends on cascade |
+
+
+🎯 Interview Answer
+If interviewer asks:
+What is the difference between inline, internal and external CSS?
+
+Say:
+Inline CSS is written directly inside an HTML element using the style attribute and 
+is mainly used for individual elements. 
+Internal CSS is written inside a <style> tag within an HTML document and applies to that page.
+     External CSS is written in a separate .css file and linked using <link>, 
+    making it more reusable and maintainable for larger applications.
+
+    

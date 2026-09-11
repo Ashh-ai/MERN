@@ -203,3 +203,107 @@ Best for	Multiple independent choices	One choice from group	Dropdown choices -->
 Checkbox = "Select any/all that apply"
 Radio = "Select exactly one from this group"
 Select = "Choose from a dropdown" -->
+
+
+
+<!-- <input type="range"> in HTML
+range is an HTML input type used to let the user select a numeric value from a specified range using a slider. -->
+<label for="volume"> volume  </label>
+
+<input type="range"
+id = " volume " >
+
+2. min and max
+These define the allowed range.
+<input
+    type="range"
+    min="0"
+    max="100"
+>
+Now the user can select a value between:
+0 ───────────────── 100
+
+3. value
+value defines the initial/default position of the slider.
+<input
+    type="range"
+    min="0"
+    max="100"
+    value="50"
+>
+Slider initially 50 par hoga.
+0 ─────────●───────── 100
+           50
+
+
+           4. step
+step controls how much the value changes each time the slider moves.
+Example:
+<input
+    type="range"
+    min="0"
+    max="100"
+    step="10"
+>
+Possible values:
+0
+10
+20
+30
+
+
+
+
+<label for="volume">
+    Volume:
+</label>
+
+<input
+    type="range"
+    id="volume"
+    name="volume"
+    min="0"
+    max="100"
+    value="50"
+    step="1"
+>
+<!-- 
+Q6. What is the difference between min, max, value, and step?
+🔥 Interview-ready answer:
+min   → minimum allowed value
+max   → maximum allowed value
+value → initial value
+step  → increment between values
+🔥 Interview Questions
+<!-- Q1. What is <input type="range">? -->
+<!-- Answer: -->
+It creates a slider that allows the user to select a numeric value within a specified range. -->
+
+
+
+<!-- 
+<textarea> in HTML
+<textarea> is used when you want the user to enter multiple lines of text. -->
+<!-- 
+    Q2. Difference between <input type="text"> and <textarea>?
+Answer:
+input is generally used for single-line text, while textarea is designed for multi-line text. -->
+<!-- 
+Q3. How do you specify the size of a textarea?
+Using:
+rows="5"
+cols="40"
+or preferably using CSS for more precise control. -->
+<!-- 
+Q6. How do you limit the number of characters?
+Use:
+maxlength="500" -->
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Write your message..."
+        minlength="10"
+        maxlength="500"
+        required>
+    </textarea>
