@@ -9,3 +9,52 @@ p {
     color : green;
     background-color : red;
 }
+
+p{
+    color : pink;
+    background-color: yellowgreen;
+}
+p{
+    color : pink;
+    background-color: black;
+}
+/* its a block element so it covers full width horizontisally  */
+
+h2 {
+    color:red;
+    background-color:gold;
+}
+button {
+    color:red;
+    background-color:gold;
+}
+
+H2{
+    text-align: center;
+}
+H1{
+    text-align: center;
+}
+h1{
+    font-weight: NORMAL ;
+}
+H2 {
+    font-weight: 900;
+}
+H1{
+    text-decoration: overline;
+}
+
+H1{
+    letter-spacing: 5PX;
+}
+H2{
+    text-decoration: GREEN underline;
+}
+h3{
+    text-decoration: line-through;
+}
+
+p{
+ line-height: 3.5;
+}
